@@ -1,7 +1,7 @@
-= Montrehack: Antidebugging Workshop
+= Montrehack: Anti-debugging Workshop
 Alexandre Beaulieu <alex@segfault.me>
 
-This repository contains the challenge source code aa well as the solution
+This repository contains the challenge source code as well as the solution
 outline.  The binaries and PDBs from the workshop are included as well as the
 x64dbg database file for those who would like to follow along. If you place the
 PDB on your symbol path, x64dbg will pick it up and display all symbol
@@ -12,7 +12,6 @@ Please note that the code itself is super buggy and most likely vulnerable to
 many things including out of bounds I/O and memory leaks. The code was made to
 get the challenges up and running quickly and demonstrate the techniques in a
 simple context.
-
 
 == Using the x64dbg database
 

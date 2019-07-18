@@ -1,0 +1,27 @@
+<!doctype html>
+<!-- Why u peekin? chals' in the bin yo. -->
+<html>
+	<body>
+		<h1>Montrehack 2019/07/17 | Anti-Debugging</h1>
+		<p>Slides: <a href="slides.pdf">download</a></p>
+		<p>Download the challenge <a href="./debugme.exe">here (debugme.exe)</a> (sha1sum: a55bc018ac1594d688f522bbd253b289117f38ac)</p>
+        <p>There is no flag validation form this time!</a>
+
+		<h2>Resources</h2>
+		<p>Feel free to use these to help you during the challenges!</p>
+        <pre><code>
+            x64 calling convention on Windows:
+            Arguments 1 to 4: rcx, rdx, r8, r9
+            0x20 bytes of Shadow Stack. Extra Arguments are pushed after that
+            Argument 5: rsp+20
+            Argument 6: rsp+28
+            ...
+        </pre></code>
+		<ul>
+			<li><a href="https://x64dbg.com/#start" target="_blank">x64dbg Download site</a></li>
+			<li><a href="http://www.felixcloutier.com/x86/" target="_blank">x86-64 Instruction Set</a></li>
+			<li><a href="https://docs.microsoft.com/en-us/" target="_blank">MSDN Documentation</a></li>
+			<li><a href="http://anti-reversing.com/Downloads/Anti-Reversing/The_Ultimate_Anti-Reversing_Reference.pdf" target="_blank">The Bible of Known Anti-Debugging Tricks</a></li>
+		</ul>
+	</body>
+</html>

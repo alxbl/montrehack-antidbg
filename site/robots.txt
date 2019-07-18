@@ -1,0 +1,5 @@
+# <|°_°|> https://www.youtube.com/watch?v=-Xde4Kk-1pI
+User-agent: *
+disallow: /robots.txt
+disallow: /ctf/robots.txt
+# O.o?!

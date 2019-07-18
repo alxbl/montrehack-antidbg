@@ -1,0 +1,40 @@
+- Show how to find `main`
+- Explain Level Handler Loop
+- Set a breakpoint in main on the level dispatcher
+
+- Hit Continue and break on TLS callback
+- Explain TLS Callbacks
+- Show suspicious calls to RegisterClassEx
+- Briefly explain windows.
+- Continue to entry point
+- Explain that entry point is not main
+- Continue to main breakpoint
+
+- Explain Level 1 and why patching return value is better than patching out
+- Step to flag in memory
+
+- Continue to level 2
+- Patch out the heap check (explain the heap flags)
+- Continue to flag
+
+- Continue to level 3
+- Explain the breakpoint loop and int3 breakpoint handler
+- Patch out CreateThread,int3 and flatten path to `mov`.
+- Continue to flag
+
+- Continue to level 4
+- Explain the level and highlight the usage of SendMessage
+- Go to the WndProc and explain that it grabs lParam that was passed and xors it.
+- XOR it and observe that it's a valid address.
+- Go to the address location and explain the function
+- XOR the set_key function and patch the address.
+- Step through to see the set_key being called.
+- Continue to flag.
+
+- Continue to level 5
+- Wait, it does nothing? Recall the TLS.
+- Dive into TLS call and show the whole DebugActiveProcess.
+- Explain that instead of accomodating the whole debug loop, we can patch the key value in the keys table.
+- Continue to flag.
+
+Questions?
